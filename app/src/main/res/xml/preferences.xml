@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="themes_automatically"
+        android:title="@string/setting_switch_themes"
+        android:summary="@string/setting_switch_themes_summary" />
+
+</PreferenceScreen>

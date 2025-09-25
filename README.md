@@ -1,0 +1,1 @@
+This project is a mobile application that provided information on daily Covid-19 cases in Portugal. The application also provided vaccine data and allowed you to create, edit, save, and delete Covid tests. In this project, I used the Room database.

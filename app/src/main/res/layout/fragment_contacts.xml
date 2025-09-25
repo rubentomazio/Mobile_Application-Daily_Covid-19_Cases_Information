@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:gravity="start"
+            android:text="@string/contacts"
+            style="@style/HighlightTextStyle"
+            android:textColor="?attr/onBackgroundColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical"
+            android:background="?attr/cardColor" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/onCardColor" />
+
+            <Button
+                android:id="@+id/button_telephone_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:drawableStart="@drawable/ic_more"
+                android:text="@string/covid_19_telephone_contacts"
+                android:textColor="?attr/onCardColor"
+                style="@style/SquareButtonStyle" />
+
+            <LinearLayout
+                android:id="@+id/telephone_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="?attr/cardColor" >
+
+                <Button
+                    android:id="@+id/button_phone_sns24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_sns24"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:textColor="?attr/onCardColor"
+                    style="@style/SquareButtonStyle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacts2"
+                    style="@style/TextStyle"
+                    android:textColor="?attr/onCardColor" />
+
+                <Button
+                    android:id="@+id/button_phone_social_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_social_security"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:textColor="?attr/onCardColor"
+                    style="@style/SquareButtonStyle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacts3"
+                    style="@style/TextStyle"
+                    android:textColor="?attr/onCardColor" />
+
+                <Button
+                    android:id="@+id/button_phone_consular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_consular"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:textColor="?attr/onCardColor"
+                    style="@style/SquareButtonStyle" />
+
+                <Button
+                    android:id="@+id/button_phone_consular2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_consular2"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:textColor="?attr/onCardColor"
+                    style="@style/SquareButtonStyle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacts4"
+                    style="@style/TextStyle"
+                    android:textColor="?attr/onCardColor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/onCardColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical"
+            android:background="?attr/cardColor" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/onCardColor" />
+
+            <Button
+                android:id="@+id/button_digital_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_more"
+                android:paddingHorizontal="15dp"
+                android:text="@string/covid_19_digital_contacts"
+                android:textColor="?attr/onCardColor"
+                style="@style/SquareButtonStyle" />
+
+            <LinearLayout
+                android:id="@+id/digital_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="?attr/cardColor" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacts5"
+                    style="@style/TextStyle"
+                    android:textColor="?attr/onCardColor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/onCardColor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

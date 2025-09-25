@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_daily_info"
+        android:icon="@drawable/ic_daily_info"
+        android:title="@string/daily_info" />
+
+    <item
+        android:id="@+id/navigation_counties"
+        android:icon="@drawable/ic_counties"
+        android:title="@string/counties" />
+
+    <item
+        android:id="@+id/navigation_covid_tests"
+        android:icon="@drawable/ic_my_tests"
+        android:title="@string/my_tests" />
+
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/contacts" />
+
+    <item
+        android:id="@+id/navigation_vaccine_info"
+        android:icon="@drawable/ic_vaccine_info"
+        android:title="@string/vaccine_info" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/navigation_exit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/exit" />
+
+</menu>

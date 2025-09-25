@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        tools:listitem="@layout/countie_view_list" />
+
+    <LinearLayout
+        android:id="@+id/filter_fragment"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/filters"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/text_incidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/incidence"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox_0_120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_incidence"
+                android:layout_alignParentStart="true"
+                android:padding="4dp"
+                android:text="0-120" />
+
+            <CheckBox
+                android:id="@+id/checkbox_120_240"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_incidence"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:text="120-240" />
+
+            <CheckBox
+                android:id="@+id/checkbox_240_480"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_incidence"
+                android:layout_alignParentEnd="true"
+                android:padding="4dp"
+                android:text="240-480" />
+
+            <CheckBox
+                android:id="@+id/checkbox_480_960"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox_240_480"
+                android:layout_alignParentStart="true"
+                android:padding="4dp"
+                android:text="480-960" />
+
+            <CheckBox
+                android:id="@+id/checkbox_960"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox_120_240"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:text="960+" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/text_degree_incidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/degree_of_incidence"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_degree_incidence"
+                android:layout_alignParentStart="true"
+                android:padding="4dp"
+                android:text="@string/low" />
+
+            <CheckBox
+                android:id="@+id/checkbox_moderate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_degree_incidence"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:text="@string/moderate" />
+
+            <CheckBox
+                android:id="@+id/checkbox_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_degree_incidence"
+                android:layout_alignParentEnd="true"
+                android:padding="4dp"
+                android:text="@string/high" />
+
+            <CheckBox
+                android:id="@+id/checkbox_very_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox_low"
+                android:layout_alignParentStart="true"
+                android:padding="4dp"
+                android:text="@string/very_high" />
+
+            <CheckBox
+                android:id="@+id/checkbox_extremely_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox_moderate"
+                android:layout_alignParentEnd="true"
+                android:padding="4dp"
+                android:text="@string/extremely_high" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/dark_red"
+                android:text="@string/close"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/button_close"
+                android:layout_marginEnd="-111dp"
+                android:text="Ok" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/recycler_view"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:layout_gravity="center"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="?attr/fabColor"
+        android:src="@drawable/ic_filter"/>
+
+</RelativeLayout>
